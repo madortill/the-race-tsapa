@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset = "UTF-8"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="multipleChoiceTest.css">
+        <link rel="stylesheet" href="../font-master.css" />     
+
+        <!-- javascript -->
+        <script type="text/javascript" src="../assets/JQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="multipleChoiceTest.js"></script>
+        <script type="text/javascript" src="../phoneMode.js"></script>
+    </head>
+    <body class="body">
+        <div class="black"></div>
+        <div class="darked"></div>
+
+        <div class="container-all">
+            <!-- הוספת כפתור עזרה -->
+            <img src="../assets/images/i.svg" class="help button" />
+            <div class="help-explanation">
+                <img src="../assets/images/x.svg" class="exit"/>
+                <p class="help-explanation-text">
+                    אוי לא! נוצר בור בכביש!
+                    <br>
+                    <br>
+                    על מנת לעבור לצד השני עליכם לבחור בתשובה הנכונה, על פי השאלה.
+                </p>
+            </div>
+
+            <!-- מכיל השאלות -->
+            <div class="question-conatiner"></div>
+            
+            <!-- התשובות -->
+            <div class="ans-container">
+                <div class="ans" id="ans1"></div>
+                <div class="ans" id="ans2"></div>
+                <div class="ans" id="ans3"></div>
+                <div class="ans" id="ans4"></div>
+            </div>
+
+            <!-- פידבק -->
+            <div class="feed-back-container"></div>
+
+            <!-- כפתור בדיקה -->
+            <div class="check-button-multiple-choice-test"></div>
+
+            <!-- כפתור המשך -->
+            <div class="next-button"></div>
+
+            <!-- סיום -->
+            <div class="end-game">
+                <p class="end-title"></p>
+                <p class="total-feedback"></p>
+                <div class="button-end"></div>
+            </div>
+        </div>
+    </body>
+</html>
+

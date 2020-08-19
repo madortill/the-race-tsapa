@@ -1,0 +1,127 @@
+/* דף עיצוב לעמוד הפתיחה */
+body {    
+    font-family: "Rubik";
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+html, body {
+    direction: rtl;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-all {
+    background-image: url("assets/images/bgopen.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo1, .logo2 {
+    height: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 6%;
+    margin-bottom: 41%;
+}
+
+.logos {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 45%;
+    width: 10%;
+    right: 0;
+    top: 6%;
+}
+
+/* כפתור התחל לומדה, כפתור אודות*/
+.button-start, .button-about  {
+    width: 30%;
+    height: 70%;
+}
+
+.soldier {
+    position: absolute;
+    width: 67%;
+    height: 217%;
+    right: -15.5%;
+    top: 18%;
+}
+
+.talk-bubble {
+    position: absolute;
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 78%;
+    top: 7%;
+    left: 4%;
+    padding-left: 4%;
+    background-color: #fbfdfed6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 72%;
+    right: 22%;
+    height: 18%;
+    bottom: 0;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+}
+
+.title {
+    color: #5289C7;
+    font-size: 5vmax;
+    top: 10%;
+    right: 52%;
+    font-weight: 500;
+    width: 70%;
+}
+
+.explanations {
+    width: 70%;
+    font-size: 4vmin;
+    font-size: min(4vmin, 3vmax);
+    min-height: 55%;
+    line-height: 3vmax;
+    color: #394374;
+}
+
+/* מסך שחור של מעבר */
+.black {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 3;
+}
+
+/* רמת סיווג */
+.classification {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: #5289C7;
+    font-size: 2.5vmax;
+    font-weight: 550;
+}

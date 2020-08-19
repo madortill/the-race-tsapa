@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset = "UTF-8"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="../assets/jQuery-ui/jquery-ui.theme.min.css" />
+        <link rel="stylesheet" href="dragGame.css" />
+        <link rel="stylesheet" href="../font-master.css" />     
+
+        <!-- javascript -->
+        <script type="text/javascript" src="../assets/JQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="../assets/jQuery-ui/jquery-ui.js"></script>        
+        <script type="text/javascript" src="../assets/jQuery-ui/jquery.ui.touch-punch.min.js"></script> 
+        <script type="text/javascript" src="dragGame.js"></script>
+        <script type="text/javascript" src="../phoneMode.js"></script>
+    </head>
+    <body class="body">
+        <div class="black"></div>
+        <div class="darked"></div>
+
+        <div class="container-all"> 
+            <!-- הוספת כפתור עזרה -->
+            <img src="../assets/images/i.svg" class="help button" />
+            <div class="help-explanation">
+                <img src="../assets/images/x.svg" class="exit"/>
+                <p class="help-explanation-text">
+                    הגעתם לגשר הקרשים! 
+                    <br> 
+                    <br> 
+                    כדי שתוכלו ללכת עליו בבטחה, עליכם לסדר את הקרשים לפי הסדר הנכון על פי ההוראה.
+                </p>
+            </div>
+
+            <!-- הוספת מיקום שאלה -->
+            <div class="question-conatiner"></div>
+            
+            <!-- הוספת טווח צדדי -->
+            <div class="range-side">
+                <div class="range-side-text">מהגדול</div>
+                <div class="range-side-text">לקטן</div>
+            </div>
+
+                
+            <!-- הוספת מיקום פידבק -->
+            <div class="feedback-drag-game"></div>
+            
+            <!-- הוספת מיקום כללי של התשובות -->
+            <div class="ans-conatisner-drag-game">
+                <!-- מוטות  -->
+                <div class="rod" id="rod-right"></div>
+                <div class="rod" id="rod-left"></div>
+            </div>
+
+            <!-- כפתור בדיקה -->
+            <div class="check-button-drag-game"></div>
+
+            <!-- סיום -->
+            <div class="end-game">
+                <p class="end-title">כל הכבוד!</p>
+                <div class="button-end"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
+

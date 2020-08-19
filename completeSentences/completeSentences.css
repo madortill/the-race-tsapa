@@ -1,0 +1,216 @@
+body {
+    font-family: "Rubik";
+    user-select: none;
+    -webkit-user-select: none;
+    color: #efc091;
+    overflow: hidden; 
+    display: inline-block;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;    
+    direction: rtl;
+}
+
+.container-all {
+    background-image: url("../assets/images/bgdragfaded.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* מסך שחור של מעבר */
+.black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 3;
+}
+
+.darked {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(43, 42, 42, 0.37);
+    z-index: 1;
+}
+
+
+/* i כפתור עזרה */
+.help {
+    position: absolute;
+    width: 4vmax;
+    height: 9vmin;
+    top: 2.8%;
+    right: 3.1%;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* קונטיינר מסך העזרה */
+.help-explanation {
+    position: absolute;
+    font-size: 5vmin;
+    padding: 3%;
+    background-color: white;
+    color: #5289C7;
+    border-radius: 11vmin;
+    top: 50%;
+    width: 48%;
+    left: 50%;
+    height: 43%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+}
+
+/* כפתור האיקס */
+.exit {
+    position: absolute;
+    left: 5%;
+    top: 11%;
+    height: 10%;
+    width: 8%;
+    cursor: pointer;
+}
+  
+  .exit:hover {
+    transform: scale(1.2);
+  }  
+  
+  /* מלל העזרה */
+.help-explanation-text {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    line-height: 6vmin;
+}
+  
+.check-button {
+    position: relative;
+    right: 21.5%;
+    font-size: 4vmin;
+}
+.question-conatiner {
+    text-align: center;
+    font-size: 5vmin;
+    margin-bottom: 1%;
+}
+
+.sentences {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5e89ca;
+    font-weight: 500;
+    top: 22vmin;
+}
+
+.missing-word {
+    background-image: url("../assets/images/space.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    height: 9vmin;
+}
+  
+.last-sentence,
+.first-sentence {
+    width: fit-content;
+}
+  
+.inside-sentence {
+    padding: 1%;
+    font-size: 6vmin;
+    margin: 0.5%;
+}
+  
+.word-bank-container {
+    position: relative;
+    display: flex;
+    top: 32%;
+    justify-content: space-around;
+    align-items: center;
+    width: 69.3%;
+    height: 50%;
+    flex-wrap: wrap;
+    padding: 0% 2.9%;
+}
+
+.missing-word-design {
+    position: relative;
+    display: flex;
+    background-image: url("../assets/images/grira.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30vmin;
+    font-size: 5vmin;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 12vmin;
+    color: #efc091;
+    cursor: pointer;
+    padding-top: 1%;
+    margin: 0% 1%;
+}
+  
+.missing-word-design:hover {
+    transform: scale(1.1);
+}
+  
+.next-button-place {
+    height: 20vmin;
+    width: 17vmax;
+    background-image: url("../assets/images/continue.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.end-game {
+    position: absolute;
+    display: none;
+    font-size: 8vmin;
+    width: 42vmax;
+    height: 50vmin;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border-radius: 11vmin;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #efc091;
+    transform: translate(-50%, -50%);
+}
+  
+  .end-title {
+    color: #e8b04a;
+    text-align: center;
+    font-weight: 550;
+}
+  
+  .button-end {
+    width: 35%;
+    height: 19%;
+    background-repeat: no-repeat;
+    bottom: 25%;
+    cursor: pointer;
+}

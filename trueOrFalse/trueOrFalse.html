@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- css -->
+    <link rel="stylesheet" href="trueOrFalse.css">
+    <link rel="stylesheet" href="../font-master.css" /> 
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../assets/JQuery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../assets/jQuery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="trueOrFalse.js"></script>
+    <script type="text/javascript" src="../phoneMode.js"></script>
+</head>
+
+<body class="body">
+    <div class="black"></div>
+    <div class="darked"></div>
+
+    <div class="container-all">
+        <!-- הוספת כפתור עזרה -->
+        <img src="../assets/images/i.svg" class="help button" />
+        <div class="help-explanation">
+            <img src="../assets/images/x.svg" class="exit"/>
+            <p class="help-explanation-text">
+                אוי... המפקד התקשר ואמר לכם למלא את השאלות הבאות בהקדם.
+                <br>
+                <br>
+                ענו על השאלות "נכון" או "לא נכון".
+            </p>
+        </div>
+
+        <!-- דיב על כל המסך כדי שלא יהיה אפשר ללחוץ על כלום... גלי.... -->
+        <div class="div-end" id="divEnd"></div>
+
+        <div class="div-board" id="div-board"></div>
+
+        <!-- כפתור בדיקה -->
+        <div class="check-button-true-or-false"></div>
+
+        <div class="next-btn-to-end"></div>
+    </div>
+</body>
+
+</html>

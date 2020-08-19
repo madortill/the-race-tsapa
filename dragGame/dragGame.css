@@ -1,0 +1,274 @@
+body {
+  font-family: "Rubik";
+  direction: rtl;
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+  display: inline-block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-all {
+  background-image: url("../assets/images/bgorderfaded.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+/* מסך שחור של מעבר */
+.black {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 3;
+}
+
+/* i כפתור עזרה */
+.help {
+  position: absolute;
+  width: 4%;
+  height: 9%;
+  top: 2.8%;
+  right: 2.1%;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.darked {
+  position: absolute;
+  /* display: none; */
+  height: 100%;
+  width: 100%;
+  background-color: #4a4a4a4a;
+  z-index: 3;
+}
+
+/* קונטיינר מסך העזרה */
+.help-explanation {
+  position: absolute;
+  font-size: 5vmin;
+  padding: 3%;
+  background-color: white;
+  color: #5289C7;
+  border-radius: 11vmin;
+  top: 50%;
+  width: 48%;
+  left: 50%;
+  height: 43%;
+  z-index: 3;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/* כפתור האיקס */
+.exit {
+  position: absolute;
+  left: 5%;
+  top: 11%;
+  height: 10%;
+  width: 8%;
+  cursor: pointer;
+}
+
+.exit:hover {
+  transform: scale(1.2);
+}  
+
+/* מלל העזרה */
+.help-explanation-text {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  line-height: 5vmin;
+}
+
+/* כפתור הבדיקה */
+.check-button-drag-game {
+  position: absolute;
+  display: none;
+  width: 18%;
+  height: 13%;
+  top: 84%;
+  left: 2.5%;
+  background-image: url("../assets/images/check.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* מכיל השאלה */
+.question-conatiner {
+  position: absolute;
+  display: none;
+  padding: 2%;
+  padding-right: 3%;
+  padding-top: 0.8%;
+  padding-bottom: 3%;
+  font-weight: 500;
+  font-size: 3.5vmin;
+  top: 0%;
+  left: 0%;
+  height: 5%;
+  width: 47%;
+  color: #3c82d6;
+  background-color: #fffefe;
+  border-bottom-right-radius: 5vmin;
+  box-shadow: 15px 8px 24px #5655558a;
+  z-index: 2;
+}
+
+.range-side {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 15px 8px 24px #5655558a;
+  color: #537435;
+  background-color: #fffefe;
+  border-bottom-left-radius: 5vmin;
+  border-top-left-radius: 5vmin;
+  width: 10%;
+  height: 70%;
+  top: 16%;
+}
+
+#sortable {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  z-index: 1;
+}
+
+#sortable li {
+  width: 100%;
+  margin: -3%;
+  font-size: 3.5vmin;
+}
+
+.ans-conatisner-drag-game {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 78%;
+  width: 70%;
+  top: 12%;
+  right: 12%;
+  color: #CEA689;
+  font-weight: 450;
+  z-index: 2;
+}
+
+.list-drag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.wood-img {
+  width: 100%;
+}
+
+.wood-text {
+  position: absolute;
+  margin: 0%;
+}
+
+.list-drag:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+}
+
+.end-complete-sentences {
+  font-size: 8vmin;
+}
+
+.tryAgain-button-place {
+  position: relative;
+  height: 11vmin;
+  width: 18%;
+  background-color: rgb(153, 177, 255);
+  font-size: 4vmin;
+}
+
+.rod {
+  position: absolute;
+  background-color: #664126;
+  border-radius: 5vmin;
+  width: 2.5%;
+  height: 102.5%;
+  top: 0;
+  z-index: 1;
+}
+
+#rod-right {
+  right: 17%;
+}
+
+#rod-left {
+  left: 17%;
+}
+
+.range-side-text {
+  font-size: 5vmin;
+  padding-top: 16%;
+  padding-bottom: 16%;
+}
+
+.end-game {
+  position: absolute;
+  display: none;
+  font-size: 8vmin;
+  width: 42vmax;
+  height: 50vmin;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  border-radius: 11vmin;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #efc091;
+  transform: translate(-50%, -50%);
+}
+
+.end-title {
+  color: #e8b04a;
+  text-align: center;
+  font-weight: 550;
+}
+
+.button-end {
+  width: 35%;
+  height: 19%;
+  background-repeat: no-repeat;
+  bottom: 25%;
+  cursor: pointer;
+}

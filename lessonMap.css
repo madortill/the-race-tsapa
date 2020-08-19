@@ -1,0 +1,93 @@
+body {
+    font-family: "Rubik";
+    user-select: none;
+    -webkit-user-select: none;
+    direction: rtl;
+    overflow: hidden;
+    display: inline-block;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-all {
+    background-image: url("assets/images/bgmap.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.place-icon {
+    height: 16vmin;
+    margin-bottom: 1%;
+}
+
+.exercises-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 21%;
+    bottom: 0%;
+    justify-content: space-evenly;
+    margin: 0 15%;
+}
+
+/* התרגול הנוכחי שצריך לעשות */
+.current-exercise {
+    position: relative;
+    transform: scale(1.4);
+    bottom: 3vmin;
+    cursor: pointer;
+}
+
+/* כל התרגולים שעברו והנוכחי */
+.enabled-exercise {
+    /* width: 9%; */
+    cursor: pointer;
+}
+
+/* השחקן */
+#player {
+    position: absolute;
+    height: 20%;
+    top: 76%;
+    left: 100%;
+    pointer-events: none;
+}
+
+.title-container {
+    position: relative;
+    display: none;
+    padding-top: 1.9%;
+    font-size: 12vmin;
+    font-weight: 600;
+    text-align: center;
+    height: 21vmin;
+    width: 100%;
+    color: #394374;
+    background-color: rgba(255, 255, 255, 0.521);
+    border-bottom-right-radius: 11vmin;
+    border-bottom-left-radius: 11vmin;
+    transition: height 1.5s ease;
+    transition: background-color 1.5s ease;
+    box-shadow: 0 24px 24px #cecece24;
+    z-index: 0;
+}
+
+/* מסך שחור של מעבר */
+.black {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 3;
+  }

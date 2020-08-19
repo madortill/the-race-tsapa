@@ -1,0 +1,384 @@
+.body {
+    font-family: "Rubik";
+    direction: rtl;
+    user-select: none;
+    -webkit-user-select: none;
+    color: #efc091;
+    overflow: hidden;
+    display: inline-block;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-all {
+    background-image: url("../assets/images/bgphotosfaded.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* מסך שחור של מעבר */
+.black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 5;
+}
+
+/* i כפתור עזרה */
+.help {
+    position: absolute;
+    width: 4vmax;
+    height: 9vmin;
+    top: 2.8%;
+    right: 1.358%;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* קונטיינר מסך העזרה */
+.help-explanation {
+    position: absolute;
+    font-size: 5vmin;
+    padding: 3%;
+    background-color: white;
+    color: #5289C7;
+    border-radius: 11vmin;
+    top: 50%;
+    width: 53%;
+    left: 50%;
+    height: 52%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+}
+
+/* כפתור האיקס */
+.exit {
+    position: absolute;
+    left: 5%;
+    top: 11%;
+    height: 8%;
+    width: 8%;
+    cursor: pointer;
+}
+
+.exit:hover {
+    transform: scale(1.2);
+}
+
+/* מלל העזרה */
+.help-explanation-text {
+    display: flex;
+    justify-content: center;
+    height: 83%;
+    align-items: center;
+    line-height: 7vmin;
+    text-align: center;
+}
+
+.darked {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(73, 73, 74, 0.38);
+    z-index: 2;
+}
+
+.transparent-div {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff00;
+    z-index: 2;
+}
+
+.div-contain-ims {
+    display: none;
+    flex-wrap: wrap;
+    width: 60.8%;
+    height: 50%;
+    align-items: flex-start;
+    padding: 1% 4%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 62%;
+    left: 49%;
+    z-index: 0;
+    overflow-y: scroll;
+}
+
+.p-title {
+    position: absolute;
+    display: none;
+    font-size: 5.5vmin;
+    font-weight: 500;
+    top: 23%;
+    left: 49%;
+    width: 72.8%;
+    text-align: center;
+    color: black;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.end-game-fail {
+    position: absolute;
+    display: none;
+    font-size: 8vmin;
+    width: 42vmax;
+    height: 50vmin; 
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border-radius: 11vmin;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #efc091;
+    transform: translate(-50%, -50%);
+}
+
+.end-game-success {
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    width: 65.8%;
+    height: 49%;
+    align-items: flex-start;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 48%;
+    z-index: 0;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+}
+
+.end-game-success::-webkit-scrollbar {
+    border-radius: 50px;
+    background-color: #d1d3d4;
+}
+
+.end-game-success::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #5D5F8F;
+}
+
+.end-title {
+  color: #e8b04a;
+  text-align: center;
+  font-weight: 550;
+}
+
+.button-end {
+    display: none;
+    position: absolute;
+    width: 13%;
+    height: 16%;
+    left: 36%;
+    bottom: 4%;
+    transform: translateX(50%);
+    background-image: url("../assets/images/continue.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.try-again {
+    display: none;
+    width: 35%;
+    height: 19%;
+    background-image: url("../assets/images/tryagain.svg");
+    background-repeat: no-repeat;
+    bottom: 25%;
+    cursor: pointer;
+}
+
+.bar-game {
+  position: absolute;
+  font-weight: 500;
+  display: none;
+  justify-content: space-between;
+  width: 72.7%;
+  height: 12.1%;
+  left: 12.7%;
+  top: 7%;
+  z-index: 0;
+}
+
+.score-container {
+  display: flex;
+  width: 40%;
+  padding: 1.2%;
+  color: white;
+}
+
+.score,
+.points {
+  position: relative;
+  font-size: 5vmin;
+  margin: 2%;
+}
+  
+.hearts-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0.5%;
+  width: 20%;
+  margin-bottom: 0.5%;
+}
+
+.heart {
+    position: relative;
+    width: 28%;
+    height: 66%;
+    margin: 2%;
+    top: 14%;
+}
+
+.img-btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 3vmin;
+    transition: all 0.4s ease 0s;
+    border: solid 0.5vmax transparent;
+    cursor: pointer;
+}
+
+.div-img {
+    width: 29%;
+    height: 44%;
+    margin: 2%;
+}
+
+/* פידבק */
+.feedback-container {
+    position: absolute;
+    display: none;
+    font-size: 8vmin;
+    width: 61vmin;
+    height: 51%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    padding-top: 2%;
+    z-index: 3;
+    border-radius: 11vmin;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #efc091;
+    transform: translate(-50%, -50%) translateZ(0);
+}
+
+.feedback-title {   
+    font-size: 8vmin;
+    font-weight: 450;    
+    text-align: center;    
+    margin: 5%;   
+    position: relative;    
+    top: 10%;
+}
+
+.feedback-explanation {
+    color: #5289C7;
+    width: 80%;
+    height: 50%;
+    margin: 0%;
+    padding: 1% 10%;
+    font-size: 4vmin;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    top: 10%;
+    line-height: 5vmin;
+}
+
+/* כפתור האיקס */
+.exit-feedback {
+    position: absolute;
+    left: 8%;
+    top: 9%;
+    height: 8%;
+    width: 8%;
+    cursor: pointer;
+}
+
+.exit-feedback:hover {
+    transform: scale(1.2);
+}  
+
+.div-contain-ims::-webkit-scrollbar {
+    border-radius: 50px;
+    background-color: #d1d3d4;
+}
+
+.div-contain-ims::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #5D5F8F;
+}
+
+/* מסך סיום כאשר הצליח */
+.img-expel {
+    width: 28%;
+    /* height: 100%; */
+    border-radius: 3vmin;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 4%;
+}
+
+.div-line {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #273958;
+    font-size: 3.5vmin;
+    font-weight: 450;
+    /* width: 154%; */
+}
+
+.div-expel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 41%;
+    color: #273958;
+}
+
+.end-title-success {
+    color: #FBB040;
+    position: absolute;
+    display: none;
+    font-size: 6vmin;
+    font-weight: 500;
+    top: 16.7%;
+    left: 16%;
+    width: 64.8%;
+    z-index: 0;
+}
+
+.title {
+    display: none;
+    width: 72.8%;
+    height: 11%;
+    color: #273958;
+    font-size: 5.5vmin;
+    position: absolute;
+    top: 24%;
+    right: 14.6%;
+    text-align: center;
+    font-weight: 440;
+}

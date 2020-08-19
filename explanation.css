@@ -1,0 +1,76 @@
+body {
+    font-family: "Rubik";
+    background-repeat: no-repeat;
+    user-select: none;
+    -webkit-user-select: none;
+    display: inline-block;
+}
+
+html, body {
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.container-all {
+    background-image: url("assets/images/bgopen.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* מסך שחור של מעבר */
+.black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 3;
+}
+
+.next {
+    height: 16%;
+    width: 22%;
+    cursor: pointer;
+}
+
+.next:hover {
+    transform: scale(1.05);
+}
+
+.white {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    height: 66%;
+    background-color: rgba(255, 255, 255, 0.84);
+    transform: translate(-50%, -50%);
+    width: 61%;
+    border-radius: 11vmin;
+    padding: 3%;
+}
+
+.white>p {
+    font-size: 7vmin;
+    font-size:  min(7vmin, 4vmax);
+    width: 82%;
+    text-align: center;
+    color: #394374;
+    line-height: 5vmax;
+    margin: 0;
+}
+
+.white> :first-child {
+    font-size: 6vmax;
+    color: #5289C7;
+    margin: 0;
+}

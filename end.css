@@ -1,0 +1,91 @@
+body {
+    font-family: "Rubik";
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-all {
+    background-image: url("assets/images/bgendscreen.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.logo {
+    position: absolute;
+    width: 6%;
+    height: 16%;
+    right: 13%;
+    bottom: 10%;
+}
+
+.button-try-again {
+    /*! position: absolute; */
+    width: 15vmax;
+    height: 13vmin;
+    /*! top: 39%; */
+    /*! right: 15.7%; */
+    cursor: pointer;
+    transform: translate(0, 50%);
+    margin-top: -6.5vmin;
+}
+.grade {
+    position: relative;
+    font-size: 6vmin;
+    color: #394374;
+}
+
+.soldier {
+    position: absolute;
+    height: 150%;
+    width: 45%;
+    top: 29%;
+    left: 17%;
+}
+
+.bubble {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 5%;
+    right: 2.5%;
+    width: 43.7%;
+    height: 40.6%;
+    /*! padding: 2%; */
+    line-height: 8vmin;
+    justify-content: space-around;
+}
+.title {
+    font-size: 9vmin;
+    color: #5289C7;
+    font-weight: 500;
+    margin-top: 4vmin;
+}
+
+.contant {
+    padding-top: 2vmin;
+    font-size: 4.5vmin;
+    font-weight: 500;
+    color: #394374;
+}
+
+/* מסך שחור של מעבר */
+.black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 3;
+}

@@ -1,0 +1,118 @@
+body {
+    font-family: "Rubik";
+    background-repeat: no-repeat;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+    direction: rtl;
+}
+
+.container-all {
+    background-image: url("assets/images/bgopen.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.darked {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #80828580;
+}
+
+/* מסך שחור של מעבר */
+.black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 3;
+}
+
+.white-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5.5%;
+    font-size: 4vmin;
+    font-weight: 400;
+    height: 72%;
+    width: 57%;
+    top: 50%;
+    left: 50%;
+    border-radius: 11vmin;
+    color: #5289C7;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    line-height: 1em;
+}
+
+.white-container >:first-child {
+    font-size: 10vmin;
+    font-weight: 550;
+}
+
+.white-container > p {
+    margin: 2%;
+    padding-bottom: 3%;
+}
+
+.row {
+    margin: 1.6%;
+}
+
+.row > p {
+    display: inline;
+}
+
+.row >:first-child {
+    font-weight: 700;
+}
+
+/* כפתור האיקס */
+.exit {
+    position: absolute;
+    left: 4.5%;
+    top: 8%;
+    height: 7%;
+    width: 8%;
+    z-index: 2;
+    cursor: pointer;
+}  
+
+.exit:hover {
+    transform: scale(1.2);
+}
+
+.logos {
+    position: absolute;
+    display: flex;
+    height: 22%;
+    align-items: center;
+    width: 30%;
+    left: 0;
+    bottom: 4.5%;
+}
+
+.logos > img {
+    width: 33%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 80%;
+}
+
+.logos > :nth-child(2) {
+    height: 100%;
+    width: 32%;
+}

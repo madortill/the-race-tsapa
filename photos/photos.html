@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset = "UTF-8"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="../assets/jQuery-ui/jquery-ui.theme.min.css" />
+        <link rel="stylesheet" href="photos.css" />
+        <link rel="stylesheet" href="../font-master.css" />     
+
+        <!-- javascript -->
+        <script type="text/javascript" src="../assets/JQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="../assets/jQuery-ui/jQuery-ui.js"></script>        
+        <script src="../assets/jQuery-ui/jquery.ui.touch-punch.min.js"></script> 
+        <script type="text/javascript" src="images-json.js"></script>
+        <script type="text/javascript" src="photos.js"></script>
+        <script type="text/javascript" src="../phoneMode.js"></script>
+
+    </head>
+    <body class="body">
+        <div class="black"></div>
+        <div class="darked"></div>
+        <div class="transparent-div"></div>
+
+        <div class="container-all">
+            <!-- הוספת כפתור עזרה -->
+            <img src="../assets/images/i.svg" class="help button" />
+            <div class="help-explanation">
+                <img src="../assets/images/x.svg" class="exit"/>
+
+                <!-- מלל להסבר -->
+                <p class="help-explanation-text">
+                    התבלבלתם בדרך!
+                    <br>
+                    <br>
+                        על מנת להגיע חזרה לדרך הנכונה עליכם לבחור את כל התמונות המתאימות להוראה שמעליהן.
+                    <br>
+                    אך שימו לב - יש לכם רק 3 פעמים לטעות, אחרת תצטרכו לחזור לתחילת התרגול.
+                </p>
+            </div>
+
+            <!-- בר עליון -->
+            <div class="bar-game">
+                <div class="score-container">
+                    <p class='score'>נשאר לבחור:</p>
+                    <p class='points'></p>
+                </div>
+                <div class="hearts-container"></div>
+            </div>
+            <p class="p-title" id="GameTitle"></p>
+
+            <div class='title'>בחרו את כל התמונות שמציגות התנהגות נכונה בזמן קורונה</div>
+
+            <!-- מכיל התמונות -->
+            <div class="div-contain-ims" id="containImgs"></div> 
+
+            <!-- פידבק ללחיצה על תמונה -->
+            <div class="feedback-container">
+                <img src="../assets/images/x.svg" class="exit-feedback"/>
+                <p class="feedback-title"></p>
+                <p class="feedback-explanation"></p>
+            </div>
+
+            <!-- סיום הצליח -->
+            <p class="end-title-success">כל הכבוד!</p>
+            <div class="end-game-success">
+                <div class="div-contain-ans" id="containAns"></div>
+            </div>
+            <div class="button-end"></div>
+            
+            <!-- סיום נכשל -->
+            <div class="end-game-fail">
+                <p class="end-title"></p>
+                <div class="try-again"></div>
+            </div>
+        </div>
+    </body>
+</html>
+
