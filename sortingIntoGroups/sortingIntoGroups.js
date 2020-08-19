@@ -111,7 +111,7 @@ function addElements() {
 
     // 
     for (let nCount = 0; nCount < AMOUNT_OF_SENTENCES; nCount++) {
-        $(".sentences").append("<div class='drag-sentences' id='sen" + (nCount + 1) +"' >" + SENTENCES_TO_SORT[nCount].sen + "</div>");
+        $(".sentences").append("<div class='drag-sentences' id='sen" + (nCount + 1) +">" + SENTENCES_TO_SORT[nCount].sen + "</div>");
         
         //
         if (SENTENCES_TO_SORT[nCount].group === "top") {

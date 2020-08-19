@@ -152,6 +152,7 @@ html, body {
     background-color: rgba(255, 255, 255, 0.95);
     cursor: pointer;
     transition: background-color 1s ease;
+    text-align: center;
 }
 
 .top {
@@ -209,6 +210,7 @@ html, body {
     font-weight: 550;
     text-align: center;
     margin-bottom: 3%;
+    margin-top: 2%;
 }
 
 .text-end {
