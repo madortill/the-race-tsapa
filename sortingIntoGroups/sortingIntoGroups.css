@@ -208,12 +208,15 @@ html, body {
     color: #e8b04a;
     font-weight: 550;
     text-align: center;
+    margin-bottom: 3%;
 }
 
 .text-end {
     color: #4d6aca;
     text-align: center;
     font-size: 5vmin;
+    margin: 0;
+    margin-bottom: 2%
 }
 
 .next-button-place {

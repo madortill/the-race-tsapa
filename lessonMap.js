@@ -1,29 +1,29 @@
 // מערך שמכיל את סדר המשחקים
 const whichExercises = [
-    {
-        game: "completeSentences", // שם הקובץ
-        title: "השלמת משפטים" // כותרת המשחק
-    },
+    // {
+    //     game: "completeSentences", // שם הקובץ
+    //     title: "השלמת משפטים" // כותרת המשחק
+    // },
     {
         game: "sortingIntoGroups",
         title: "מיון לפי קבוצות"
-    },
-    {
-        game: "multipleChoiceTest",
-        title: "שאלות אמריקאיות"
-    },
-    {
-        game: "photos",
-        title: "בחירת תמונות"
-    },
-    {
-        game: "trueOrFalse",
-        title: "נכון או לא נכון"
-    },
-    {
-        game: "dragGame",
-        title: "גרירה לפי סדר"
     }
+    // {
+    //     game: "multipleChoiceTest",
+    //     title: "שאלות אמריקאיות"
+    // },
+    // {
+    //     game: "photos",
+    //     title: "בחירת תמונות"
+    // },
+    // {
+    //     game: "trueOrFalse",
+    //     title: "נכון או לא נכון"
+    // },
+    // {
+    //     game: "dragGame",
+    //     title: "גרירה לפי סדר"
+    // }
 ];
 const AMOUNT_OF_EXERCISES = whichExercises.length;
 

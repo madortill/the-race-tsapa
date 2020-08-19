@@ -1,37 +1,37 @@
 // מערך המשפטים
 const SENTENCES_TO_SORT = [
     {
-        sen: "קבוצה 1", // המשפט
+        sen: "זמן ומשאבים", // המשפט
         group: "top" // לאיזה קבוצה הוא משתייך :top/bot
     },
     {
-        sen: "קבוצה 2",
+        sen: "מעורבות החניך",
         group: "bot"
     },
     {
-        sen: "קבוצה 1",
+        sen: "מדידת יעילות",
         group: "top"
     },
     {
-        sen: "קבוצה 2",
+        sen: "הערכה על בסיס מבחנים",
         group: "bot"
     },
     {
-        sen: "קבוצה 1",
+        sen: "תוכן הדרגתי",
         group: "top"
     },
     {
-        sen: "קבוצה 2",
+        sen: "מוטיבציית הלומד",
         group: "bot"
-    },
-    {
-        sen: "קבוצה 1",
-        group: "top"
-    },
-    {
-        sen: "קבוצה 2",
-        group: "bot"
-    },
+    }
+    // {
+    //     sen: "קבוצה 1",
+    //     group: "top"
+    // },
+    // {
+    //     sen: "קבוצה 2",
+    //     group: "bot"
+    // },
     
 ];
 
@@ -55,7 +55,7 @@ Date: 3/5/2020
 */
 $(function() {
     // מטפל במצב שבו השחקן לחץ על ריפרש
-    handleRefresh();
+    // handleRefresh();
 
     $(".black").fadeOut();
     $(".darked").fadeIn();
